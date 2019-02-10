@@ -2,11 +2,13 @@ import java.util.Scanner;
 
 public class Skeleton_Code {
     public static void main(String[] args) {
+        //part 1: make PrintName print out your full name
         String first = "joel";
         String last = "george";
         String full = first + " " + last;
-
         PrintName(full);
+
+
         System.out.println();
         MakeSomeVariables();
         System.out.println();
