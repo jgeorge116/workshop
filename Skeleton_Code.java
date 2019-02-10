@@ -3,9 +3,9 @@ import java.util.Scanner;
 public class Skeleton_Code {
     public static void main(String[] args) {
         //part 1: make PrintName print out your full name
-        String first = "joel";
-        String last = "george";
-        String full = first + " " + last;
+        String first = "Bill"; //change this to your first name
+        String last = "Gates"; //change this to your last name
+        String full = first + " " + last; //this puts together your first and last name right now, with a space in between
         PrintName(full);
 
 
