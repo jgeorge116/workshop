@@ -2,15 +2,17 @@ import java.util.Scanner;
 
 public class Skeleton_Code {
     public static void main(String[] args) {
-        //part 1: use function calls to check if your guess is correct
+        //part 1: functions
+        //use function calls to check if your guess is correct
         guess(1); //guess a number between one and five
         System.out.println();
         guess(5); //The same function can give different output because of different arguments
         System.out.println();
 
-
+        //part 2: variables
         String name = "mike"; //a word or sentence. these must be surrounded with (" ")
         char letter = 'f'; //a single letter. these need to be surrounded with apostrophes (' ')
+
         int num = 10; //int can be any full number you want (ie. 1,2,1000, -1000, but not 2.5)
         boolean flag = true; //booleans can be true or false
         double decimalNumber = 3.14;
@@ -21,18 +23,19 @@ public class Skeleton_Code {
         String first = "Bill"; //change this to your first name
         String last = "Gates"; //change this to your last name
         String full = first + " " + last; //this puts together your first and last name right now, with a space in between
+        first = "William"; //reassignment of a variable
         System.out.println();
+
         PrintName(full);
 
-        System.out.println();
         ShowIFElseifELseSatements();
-        System.out.println();
+
         ShowExamplesWithTypicalLoops();
-        System.out.println();
+
         EnhancedForLoopExampleWithArray();
-        System.out.println();
+
         ShowMathOperators(8,2); //passing in 2 arguments into our function
-        System.out.println();
+
         ShowUseOfUSerInput();
     }
 
@@ -40,11 +43,12 @@ public class Skeleton_Code {
         int answer = 3;
         System.out.print("Your guess is " + i + ", guess ");
         if (i < answer)
-            System.out.print("higher!");
+            System.out.println("higher!");
         if (i > answer)
-            System.out.print("lower!");
+            System.out.println("lower!");
         if (i == answer)
-            System.out.print("is correct!");
+            System.out.println("is correct!");
+        System.out.println();
 
     }
 
@@ -54,6 +58,7 @@ public class Skeleton_Code {
 
     static void PrintName(String name) {
         System.out.println("My name is " + name);
+        System.out.println();
     }
 
     /**
@@ -66,7 +71,6 @@ public class Skeleton_Code {
                 "\nMade variable " + num + " of type integer" +
                 "\nMade variable " + flag + " of type boolean" +
                 "\nMade variable " + aDouble + " of type double");
-
     }
 
     /**
@@ -79,6 +83,7 @@ public class Skeleton_Code {
         System.out.println("'"+ a + "'" + "/" + "'" + b + "'" + "is " + (a/b));
         System.out.println("'"+ a + "'" + "*" + "'" + b + "'" + "is " + (a*b));
         System.out.println("'"+ a + "'" + "%" + "'" + b + "'" + "is " + (a%b)); //modulo operator (num1/num2) then takes remainder
+        System.out.println();
     }
 
     static void ShowIFElseifELseSatements() {
@@ -90,6 +95,7 @@ public class Skeleton_Code {
         } else {
             System.out.println("the number is less than 20");
         }
+        System.out.println();
 
         String randomString = "hello";
         if(randomString.equals("bye") || randomString.equals("hello")) { //1 statement has to be true for the whole if statment to be true
@@ -101,6 +107,7 @@ public class Skeleton_Code {
         } else {
             System.out.println("no statements are true");
         }
+        System.out.println();
     }
 
     /**
@@ -120,6 +127,7 @@ public class Skeleton_Code {
             //i=0 is the starting condition, i<10 is the stopping condition, i++ increments i by 1
             System.out.println(i);
         }
+        System.out.println();
     }
 
     /**
@@ -136,6 +144,7 @@ public class Skeleton_Code {
         for (int vars : intArray) { //go through every number in the array starting at the beginning
             System.out.println(vars); //prints the number
         }
+        System.out.println();
     }
 
     /**
@@ -147,5 +156,6 @@ public class Skeleton_Code {
         System.out.println("whats your name? ");
         String usersName = myScanner.nextLine(); //stores the user's input into a string variable
         System.out.println("your name is " + usersName);
+        System.out.println();
     }
 }
