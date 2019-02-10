@@ -13,7 +13,7 @@ public class Skeleton_Code {
         int num = 10; //any whole number you want (ie. 1,2,1000, -1000, but not 2.5 or "doggy")
         boolean flag = true; //true or false
         PrintSomeVariables(name, letter, num, flag); //we have to separate multiple arguments with commas
-        System.out.println();
+
 
         //variable operations
         //make PrintName print out your full name
@@ -28,15 +28,14 @@ public class Skeleton_Code {
         String full = first + " " + last; //the + operator combines Strings when used on them
         PrintName(full);
 
-        System.out.println();
         ShowIFElseifELseSatements();
-        System.out.println();
+
         ShowExamplesWithTypicalLoops();
-        System.out.println();
+
         EnhancedForLoopExampleWithArray();
-        System.out.println();
+
         ShowMathOperators(8,2); //passing in 2 arguments into our function
-        System.out.println();
+
         ShowUseOfUSerInput();
     }
 
@@ -49,6 +48,7 @@ public class Skeleton_Code {
             System.out.println("lower!");
         if (i == answer)
             System.out.println("is correct!");
+        System.out.println();
 
     }
 
@@ -58,6 +58,7 @@ public class Skeleton_Code {
 
     static void PrintName(String name) {
         System.out.println("My name is " + name);
+        System.out.println();
     }
 
     /**
@@ -69,7 +70,7 @@ public class Skeleton_Code {
                 "\nMade variable " + letter + " of type char" +
                 "\nMade variable " + num + " of type integer" +
                 "\nMade variable " + flag + " of type boolean");
-
+        System.out.println();
     }
 
     /**
@@ -82,6 +83,7 @@ public class Skeleton_Code {
         System.out.println("'"+ a + "'" + "/" + "'" + b + "'" + "is " + (a/b));
         System.out.println("'"+ a + "'" + "*" + "'" + b + "'" + "is " + (a*b));
         System.out.println("'"+ a + "'" + "%" + "'" + b + "'" + "is " + (a%b)); //modulo operator (num1/num2) then takes remainder
+        System.out.println();
     }
 
     static void ShowIFElseifELseSatements() {
@@ -93,6 +95,7 @@ public class Skeleton_Code {
         } else {
             System.out.println("the number is less than 20");
         }
+        System.out.println();
 
         String randomString = "hello";
         if(randomString.equals("bye") || randomString.equals("hello")) { //1 statement has to be true for the whole if statment to be true
@@ -104,6 +107,7 @@ public class Skeleton_Code {
         } else {
             System.out.println("no statements are true");
         }
+        System.out.println();
     }
 
     /**
@@ -123,6 +127,7 @@ public class Skeleton_Code {
             //i=0 is the starting condition, i<10 is the stopping condition, i++ increments i by 1
             System.out.println(i);
         }
+        System.out.println();
     }
 
     /**
@@ -139,6 +144,7 @@ public class Skeleton_Code {
         for (int vars : intArray) { //go through every number in the array starting at the beginning
             System.out.println(vars); //prints the number
         }
+        System.out.println();
     }
 
     /**
@@ -150,5 +156,6 @@ public class Skeleton_Code {
         System.out.println("whats your name? ");
         String usersName = myScanner.nextLine(); //stores the user's input into a string variable
         System.out.println("your name is " + usersName);
+        System.out.println();
     }
 }
