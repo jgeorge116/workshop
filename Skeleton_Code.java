@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Skeleton_Code {
     public static void main(String[] args) {
         String first = "joel";
@@ -13,7 +15,8 @@ public class Skeleton_Code {
         ShowExamplesWithTypicalLoops();
         System.out.println();
         EnhancedForLoopExampleWithArray();
-
+        System.out.println();
+        ShowUseOfUSerInput();
     }
 
     /**
@@ -65,6 +68,7 @@ public class Skeleton_Code {
             System.out.println("no statements are true");
         }
     }
+
     /**
      * a function that shows the use of a while loop and a foor loop
      **/
@@ -99,4 +103,15 @@ public class Skeleton_Code {
         }
     }
 
+    /**
+     * a function that shows how to read user input
+     **/
+
+    static void ShowUseOfUSerInput() {
+        Scanner myScanner = new Scanner(System.in);
+        System.out.println("whats your name? ");
+        String usersName = myScanner.nextLine();
+        System.out.println("your name is " + usersName);
+
+    }
 }
