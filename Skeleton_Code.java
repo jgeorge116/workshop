@@ -112,6 +112,5 @@ public class Skeleton_Code {
         System.out.println("whats your name? ");
         String usersName = myScanner.nextLine();
         System.out.println("your name is " + usersName);
-
     }
 }
