@@ -39,6 +39,10 @@ public class Skeleton_Code {
         ShowUseOfUSerInput();
     }
 
+    /**
+     * a function that tells you if your guess was higher, lower, or equal to the set number
+     **/
+
     private static void guess(int i) {
         int answer = 3;
         System.out.print("Your guess is " + i + ", guess ");
@@ -74,8 +78,9 @@ public class Skeleton_Code {
     }
 
     /**
-     * a function that shows how conditional statements work
+     * a function the basic use of mathematical operators
      **/
+
 
     static void ShowMathOperators(int a, int b){
         System.out.println("'"+ a + "'" + "+" + "'" + b + "'" + "is " + (a+b));
@@ -85,6 +90,10 @@ public class Skeleton_Code {
         System.out.println("'"+ a + "'" + "%" + "'" + b + "'" + "is " + (a%b)); //modulo operator (num1/num2) then takes remainder
         System.out.println();
     }
+
+    /**
+     * a function that shows how conditional statements work
+     **/
 
     static void ShowIFElseifELseSatements() {
         int num2 = 10;
