@@ -4,20 +4,24 @@ public class Skeleton_Code {
     public static void main(String[] args) {
         //part 1: use function calls to check if your guess is correct
         guess(1); //guess a number between one and five
+        System.out.println();
         guess(5); //The same function can give different output because of different arguments
+        System.out.println();
 
 
         String name = "mike"; //a word or sentence. these must be surrounded with (" ")
         char letter = 'f'; //a single letter. these need to be surrounded with apostrophes (' ')
         int num = 10; //int can be any full number you want (ie. 1,2,1000, -1000, but not 2.5)
         boolean flag = true; //booleans can be true or false
+        double decimalNumber = 3.14;
         System.out.println(); //prints out a blank line. this will make the display more clear
-        PrintSomeVariables(name, letter, num, flag);
+        PrintSomeVariables(name, letter, num, flag, decimalNumber);
 
         //part 2: make PrintName print out your full name
         String first = "Bill"; //change this to your first name
         String last = "Gates"; //change this to your last name
         String full = first + " " + last; //this puts together your first and last name right now, with a space in between
+        System.out.println();
         PrintName(full);
 
         System.out.println();
@@ -34,7 +38,7 @@ public class Skeleton_Code {
 
     private static void guess(int i) {
         int answer = 3;
-        System.out.print("Your guess is " + i + " guess ");
+        System.out.print("Your guess is " + i + ", guess ");
         if (i < answer)
             System.out.print("higher!");
         if (i > answer)
@@ -56,11 +60,12 @@ public class Skeleton_Code {
      * a function that shows the use of variables with different types
      **/
 
-    static void PrintSomeVariables(String name, char letter, int num, boolean flag) {
+    static void PrintSomeVariables(String name, char letter, int num, boolean flag, double aDouble) {
         System.out.println("Made variable " + name + " of type String" +
                 "\nMade variable " + letter + " of type char" +
                 "\nMade variable " + num + " of type integer" +
-                "\nMade variable " + flag + " of type boolean");
+                "\nMade variable " + flag + " of type boolean" +
+                "\nMade variable " + aDouble + " of type double");
 
     }
 
@@ -104,13 +109,13 @@ public class Skeleton_Code {
 
     static void ShowExamplesWithTypicalLoops() {
         int num3 = 10;
-        System.out.println("while loops example");
+        System.out.println("while loops example:");
         while (num3 > 0) {  //this loop will happen 10 times
             System.out.println(num3);
             num3--; //decrements the variable by 1
         }
         System.out.println();
-        System.out.println("for loop example");
+        System.out.println("for loop example:");
         for (int i = 0; i < 10; i++) { //this loop will happen 10 times
             //i=0 is the starting condition, i<10 is the stopping condition, i++ increments i by 1
             System.out.println(i);
@@ -127,7 +132,7 @@ public class Skeleton_Code {
             intArray[i] = i; //fills the ith position of the array with i
         }
         System.out.println();
-        System.out.println("enhanced for loop example");
+        System.out.println("enhanced for loop example:");
         for (int vars : intArray) { //go through every number in the array starting at the beginning
             System.out.println(vars); //prints the number
         }
