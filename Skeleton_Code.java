@@ -1,7 +1,10 @@
 public class Skeleton_Code {
     public static void main(String[] args) {
-        String myname = "joel";
-        PrintName(myname);
+        String first = "joel";
+        String last = "george";
+        String full = first+last;
+
+        PrintName(full);
         System.out.println();
         MakeSomeVariables();
 
