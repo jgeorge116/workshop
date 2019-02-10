@@ -67,6 +67,15 @@ public class Skeleton_Code {
         System.out.println();
     }
 
+
+    static void findCircleInformation(int radius ) {
+        double circumference = 0;
+        double area = 0;
+
+        print("circumference = "); //concaten
+        print("area = ");
+
+    }
     /**
      * a function that shows the use of variables with different types
      **/
@@ -170,5 +179,10 @@ public class Skeleton_Code {
         String usersName = myScanner.nextLine(); //stores the user's input into a string variable
         System.out.println("your name is " + usersName);
         System.out.println();
+    }
+
+
+    static void print(Object o) {
+        System.out.println(o);
     }
 }
