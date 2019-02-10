@@ -2,15 +2,25 @@ import java.util.Scanner;
 
 public class Skeleton_Code {
     public static void main(String[] args) {
-        //part 1: make PrintName print out your full name
+        //part 1: convert this statement into something that will print out 8
+        addTwo(2);
+
+        String name = "mike"; //a word or sentence. these must be surrounded with (" ")
+        char letter = 'f'; //a single letter. these need to be surrounded with apostrophes (' ')
+        int num = 10; //int can be any full number you want (ie. 1,2,1000, -1000, but not 2.5)
+        boolean flag = true; //booleans can be true or false
+        System.out.println(); //prints out a blank line. this will make the display more clear
+        PrintSomeVariables(name, letter, num, flag);
+
+        //part 2: make PrintName print out your full name
         String first = "Bill"; //change this to your first name
         String last = "Gates"; //change this to your last name
         String full = first + " " + last; //this puts together your first and last name right now, with a space in between
         PrintName(full);
 
 
-        System.out.println();
-        MakeSomeVariables();
+
+
         System.out.println();
         ShowIFElseifELseSatements();
         System.out.println();
@@ -19,6 +29,10 @@ public class Skeleton_Code {
         EnhancedForLoopExampleWithArray();
         System.out.println();
         ShowUseOfUSerInput();
+    }
+
+    private static void addTwo(int i) {
+        System.out.println(i + "+2=" + (i+2));
     }
 
     /**
@@ -33,11 +47,8 @@ public class Skeleton_Code {
      * a function that shows the use of variables with different types
      **/
 
-    static void MakeSomeVariables() {
-        String name = "mike";
-        char letter = 'f';
-        int num = 10;
-        boolean flag = true;
+    static void PrintSomeVariables(String name, char letter, int num, boolean flag) {
+
         System.out.println("Made variable " + name + " of type String" +
                 "\nMade variable " + letter + " of type char" +
                 "\nMade variable " + num + " of type integer" +
