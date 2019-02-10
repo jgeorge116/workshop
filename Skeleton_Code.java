@@ -5,9 +5,7 @@ public class Skeleton_Code {
         //part 1: functions
         //use function calls to check if your guess is correct
         guess(1); //guess a number between one and five
-        System.out.println();
         guess(5); //The same function can give different output because of different arguments
-        System.out.println();
 
         //part 2: variables
         String name = "mike"; //a word or sentence. these must be surrounded with (" ")
@@ -15,16 +13,20 @@ public class Skeleton_Code {
 
         int num = 10; //int can be any full number you want (ie. 1,2,1000, -1000, but not 2.5)
         boolean flag = true; //booleans can be true or false
-        double decimalNumber = 3.14;
-        System.out.println(); //prints out a blank line. this will make the display more clear
+        double decimalNumber = 3.14; //doubles can be any decimal, such as 2.0 or 98.1
+
         PrintSomeVariables(name, letter, num, flag, decimalNumber);
 
-        //part 2: make PrintName print out your full name
+        //part 2.1: reassignment, declarations and string operations
         String first = "Bill"; //change this to your first name
         String last = "Gates"; //change this to your last name
+        first = "William"; //the value of first has now changed from Bill to William
+
+        //reassign first and last to your name, and declare a new variable for your middle name...
+
+
+        //... then edit this line so your middle name is included in full
         String full = first + " " + last; //this puts together your first and last name right now, with a space in between
-        first = "William"; //reassignment of a variable
-        System.out.println();
 
         PrintName(full);
 
@@ -71,6 +73,8 @@ public class Skeleton_Code {
                 "\nMade variable " + num + " of type integer" +
                 "\nMade variable " + flag + " of type boolean" +
                 "\nMade variable " + aDouble + " of type double");
+        System.out.println();
+
     }
 
     /**
