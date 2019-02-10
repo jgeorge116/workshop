@@ -2,8 +2,10 @@ import java.util.Scanner;
 
 public class Skeleton_Code {
     public static void main(String[] args) {
-        //part 1: convert this statement into something that will print out 8
-        addTwo(2);
+        //part 1: use function calls to check if your guess is correct
+        guess(1); //guess a number between one and five
+        guess(5); //The same function can give different output because of different arguments
+
 
         String name = "mike"; //a word or sentence. these must be surrounded with (" ")
         char letter = 'f'; //a single letter. these need to be surrounded with apostrophes (' ')
@@ -30,8 +32,16 @@ public class Skeleton_Code {
         ShowUseOfUSerInput();
     }
 
-    private static void addTwo(int i) {
-        System.out.println(i + "+2=" + (i+2));
+    private static void guess(int i) {
+        int answer = 3;
+        System.out.print("Your guess is " + i + " guess ");
+        if (i < answer)
+            System.out.print("higher!");
+        if (i > answer)
+            System.out.print("lower!");
+        if (i == answer)
+            System.out.print("is correct!");
+
     }
 
     /**
