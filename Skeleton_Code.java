@@ -2,22 +2,30 @@ import java.util.Scanner;
 
 public class Skeleton_Code {
     public static void main(String[] args) {
-        //part 1: use function calls to check if your guess is correct
+        //part 1: functions
+        //use function calls to check if your guess is correct
         guess(1); //guess a number between one and five
         guess(5); //The same function can give different output because of different arguments
 
-
+        //part 2: variables
         String name = "mike"; //a word or sentence. these must be surrounded with (" ")
         char letter = 'f'; //a single letter. these need to be surrounded with apostrophes (' ')
-        int num = 10; //int can be any full number you want (ie. 1,2,1000, -1000, but not 2.5)
-        boolean flag = true; //booleans can be true or false
-        System.out.println(); //prints out a blank line. this will make the display more clear
-        PrintSomeVariables(name, letter, num, flag);
+        int num = 10; //any whole number you want (ie. 1,2,1000, -1000, but not 2.5 or "doggy")
+        boolean flag = true; //true or false
+        PrintSomeVariables(name, letter, num, flag); //we have to separate multiple arguments with commas
+        System.out.println();
 
-        //part 2: make PrintName print out your full name
-        String first = "Bill"; //change this to your first name
-        String last = "Gates"; //change this to your last name
-        String full = first + " " + last; //this puts together your first and last name right now, with a space in between
+        //variable operations
+        //make PrintName print out your full name
+        String first = "Bill";
+        String last = "Gates";
+
+        //reassign these variables to your own first and last name, and create a new variable for your middle name
+        first = "William"; //reassignment of a variable
+
+
+
+        String full = first + " " + last; //the + operator combines Strings when used on them
         PrintName(full);
 
         System.out.println();
@@ -34,13 +42,13 @@ public class Skeleton_Code {
 
     private static void guess(int i) {
         int answer = 3;
-        System.out.print("Your guess is " + i + " guess ");
+        System.out.print("Your guess is " + i + ". guess ");
         if (i < answer)
-            System.out.print("higher!");
+            System.out.println("higher!");
         if (i > answer)
-            System.out.print("lower!");
+            System.out.println("lower!");
         if (i == answer)
-            System.out.print("is correct!");
+            System.out.println("is correct!");
 
     }
 
